@@ -20,7 +20,7 @@ YTchannel2="UCq-Fj5jknLsUf-MWSy4_brA" #tseries
 apiKey = "YOUR_API_KEY"
 
 YTchannel1data = requests.get('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=' + YTchannel1 + '&key=' + apiKey)
-YTchannel2sdata = requests.get('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=' + YTchannel2 + '&key=' + apiKey)
+YTchannel2data = requests.get('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=' + YTchannel2 + '&key=' + apiKey)
 YTchannel1subs = json.loads(YTchannel1data.text)["items"][0]["statistics"]["subscriberCount"]
 YTchannel2subs = json.loads(YTchannel2data.text)["items"][0]["statistics"]["subscriberCount"]
 
