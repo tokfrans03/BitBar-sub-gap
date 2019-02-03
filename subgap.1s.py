@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #
-# <bitbar.title>Pewdiepie vs T-series sub gap</bitbar.title>
+# <bitbar.title>Youtube Sub gap</bitbar.title>
 # <bitbar.version>v1.0</bitbar.version>
 # <bitbar.author>Tok1</bitbar.author>
 # <bitbar.author.github>tokfrans03</bitbar.author.github>
