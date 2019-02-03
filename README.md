@@ -10,4 +10,4 @@ A [BitBar](https://github.com/matryer/bitbar) plugin that Displays the sub gap b
 - Set your API key in the script
 - Optionally change the channel ids
 
-if you get an error about requests not being fount just run `python -m pip install --user requests`
+if you get an error about requests not being found, just run `python -m pip install --user requests`
