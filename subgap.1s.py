@@ -7,7 +7,7 @@
 # <bitbar.desc>Displays the sub gap between Pewdiepie and T-series. Set your youtube api key in the script. You can also change the channel ids to check on other sub gaps, just make shure the bigger one is first</bitbar.desc>
 # <bitbar.image>https://github.com/garythung/bitbar-age-ticker/blob/master/bitbar-age-ticker.gif?raw=true</bitbar.image>
 # <bitbar.dependencies>python</bitbar.dependencies>
-# <bitbar.abouturl>https://github.com/garythung/bitbar-age-ticker</bitbar.abouturl>
+# <bitbar.abouturl>https://github.com/tokfrans03/BitBar-sub-gap</bitbar.abouturl>
 
 import requests
 import json
@@ -15,15 +15,15 @@ import signal
 import os
 import time
 
-pewds="UC-lHJZR3Gqxm24_Vd_AJ5Yw"
-tseries="UCq-Fj5jknLsUf-MWSy4_brA"
+YTchannel1="UC-lHJZR3Gqxm24_Vd_AJ5Yw" #pewdiepie
+YTchannel2="UCq-Fj5jknLsUf-MWSy4_brA" #tseries
 apiKey = "YOUR_API_KEY"
 
-pewdsdata = requests.get('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=' + pewds + '&key=' + apiKey)
-tseriesdata = requests.get('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=' + tseries + '&key=' + apiKey)
-pewdssubs = json.loads(pewdsdata.text)["items"][0]["statistics"]["subscriberCount"]
-tseriessubs = json.loads(tseriesdata.text)["items"][0]["statistics"]["subscriberCount"]
+YTchannel1data = requests.get('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=' + YTchannel1 + '&key=' + apiKey)
+YTchannel2sdata = requests.get('https://www.googleapis.com/youtube/v3/channels?part=statistics&id=' + YTchannel2 + '&key=' + apiKey)
+YTchannel1subs = json.loads(pewdsdata.text)["items"][0]["statistics"]["subscriberCount"]
+YTchannel2subs = json.loads(YTchannel2data.text)["items"][0]["statistics"]["subscriberCount"]
 
-dif = int(pewdssubs) - int(tseriessubs)
+dif = int(YTchannel1subs) - int(YTchannel2subs)
 
 print("{:,d}".format(int(dif)))
