@@ -6,7 +6,7 @@ A [BitBar](https://github.com/matryer/bitbar) plugin that Displays the sub gap b
 
 ## Installation
 - Install [BitBar](https://getbitbar.com/)
-- Copy [`subgap.1s.py`](https://github.com/tokfrans03/BitBar-sub-gap/raw/master/subgap.1s.py) to your BitBar plugin directory
+- Copy [`subgap.1s.py`](https://github.com/tokfrans03/BitBar-sub-gap/raw/master/subgap.1s.py) to your BitBar plugin directory or click [this](bitbar://openPlugin?title=SubGap&src=https://github.com/tokfrans03/BitBar-sub-gap/raw/master/subgap.1s.py) link
 - Set your API key in the script
 - Optionally change the channel ids
 
