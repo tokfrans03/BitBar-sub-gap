@@ -29,10 +29,10 @@ dif = int(YTchannel1subs) - int(YTchannel2subs)
 print("{:,d}".format(int(dif)))
 print "---"
 print "Channel 1 | color=blue"
-print ("{:,d}".format(int(pewdssubs)))
+print ("{:,d}".format(int(YTchannel1subs)))
 print "---"
 print "Channel 2 | color=red"
-print ("{:,d}".format(int(tseriessubs)))
+print ("{:,d}".format(int(YTchannel2subs)))
 print "---"
 print "Gap | color=green"
 print ("{:,d}".format(int(dif)))
